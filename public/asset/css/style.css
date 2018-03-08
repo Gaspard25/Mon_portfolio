@@ -1,0 +1,706 @@
+/*
+Flexbox grid: https://github.com/anacoelhovicente/tangerine
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Pacifico');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700');
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+@font-face {
+	font-family: "GothamRounded-Book";
+	src: url("GothamRounded-Book.otf");
+}
+
+@font-face {
+	font-family: "GothamRounded-BoldItalic";
+	src: url("GothamRounded-BoldItalic.otf");
+}
+
+@font-face {
+	font-family: "GothamRounded-Medium";
+	src: url("GothamRounded-Medium.otf");
+}
+
+@font-face {
+	font-family: "GothamRounded-MediumItalic";
+	src: url("GothamRounded-MediumItalic.otf");
+}
+
+@font-face {
+	font-family: "Freight Big Book";
+	src: url("Freight Big Book.otf");
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+  body{
+
+	overflow-x: hidden;
+	width: 100%;
+}
+
+
+header {
+
+	height: 100vh;
+	width:100%;
+	background-image: url(../img/header1.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	top: 0;
+
+	
+}
+
+
+.navigation {
+	width: 100%;
+	z-index: 1;
+}
+
+.navbar-brand h1 {
+	
+	font-family: 'Pacifico', cursive;
+	letter-spacing: 0.1em;
+	color:black;
+	font-size: 25px; 
+}
+
+
+@media screen and (max-width: 420px) {
+	.navbar-light .navbar-nav .nav-link {
+		background-color: #e0e4e7;
+		opacity: 0.5;
+	}
+}
+
+
+.menu li{
+
+	list-style-type:none;
+}
+
+.nav-item{
+	padding-right: 3%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	text-decoration: none;
+	color:black;
+	border-style: solid;
+	border-width: 2px;
+	font-family: "Freight Big Book";
+	font-size: 17px;
+	padding: 10px;
+	border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color:transparent;
+}
+
+.navbar-nav{
+
+	margin-right: 5%;
+}
+
+nav{
+	background-color: #fcfcfc;
+	opacity: 0.8;	
+}
+
+.navbar .navbar-expand-lg .navbar-light .fixed-top .titre{
+
+	padding-right: 18%;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: black;
+	border-style: solid;
+	border-width: 2px;
+	padding: 10px;
+	transition-duration: 1s;
+	border-color: grey ;
+}
+
+.titre p{
+	text-align: justify;
+	margin-left: 50px;
+	color: grey;
+	font-family:"GothamRounded-Medium";
+	font-size: 10px;
+
+}
+
+.chevron a .fa{
+	border-radius: 50%;
+	border: 6px solid #D31F43;
+	padding: 1%;
+	background-color : #D31F43;
+	opacity: 0.5;
+	color:white;
+}
+
+.chevron{
+
+	position: absolute;
+	right: 50%;
+	bottom:5%;
+}
+
+.chevron .fa:hover{
+
+	text-align: center;
+	border-radius: 50%;
+	border: 6px solid white;
+	padding: 1%;
+	background-color: white;
+	opacity: 0.5;
+	color: black;
+	transition-duration:1s;
+}
+
+.avatar{
+
+	position: absolute;
+	bottom: 0%;
+    right: 70%;
+}
+
+@media screen and (max-width: 420px) {
+	.ancre1 {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 420px) {
+	.ancre2 {
+		display: none;
+	}
+}
+
+/* ----------------   fin header ---------------------*/
+
+
+/* ----------------   A propos de moi  ---------------------*/
+
+
+.description{
+
+	height: 100%;
+	background-color: white;
+	text-align: justify;
+	text-align-last: center;
+	
+}
+
+.description h2{
+	margin-bottom: 15%;
+	margin-top: 15%;
+}
+
+ h2{
+
+	letter-spacing: 0.2em;
+	margin-top: 50px;
+	padding-bottom: 5%;
+	border-style: solid;
+	border-width: 1px;
+    border-top-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	border-bottom-color: black;
+	font-family: "Freight Big Book";
+	text-align: center;
+}
+
+.description p{
+	font-family:"GothamRounded-Medium";
+	font-size: 20px;
+}
+
+.fleche a .fa {
+ 
+	text-align: center;
+	opacity: 0.5;
+	margin-top: 150%;
+	color: black;
+
+}
+
+.fleche .fa:hover {
+	text-align: center;
+	opacity: 0.5;
+	color: #D31F43;
+	transition-duration: 1s;
+}
+
+
+/* ----------------  Fin A propos de moi  ---------------------*/
+
+/* ----------------  Contact  ---------------------*/
+
+.contact {
+
+	height: 60%;
+	background-image: url(../img/scott-webb-379433.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: 100% 100%;
+	
+}
+.contact h2{
+
+	color: #EFEFEF;
+	border-bottom-color:#EFEFEF;
+}
+
+.formulaire{
+
+	margin-top: 6%;
+}
+
+.btn-primary {
+
+    color: white;
+    background-color: #D31F43;
+    border-color: #D31F43;
+    font-family: 'Boogaloo', cursive;
+    letter-spacing: 0.1em;
+}
+
+.network i{
+
+	color: white;
+	border-style: solid;
+	border-width: 3px;
+	padding: 30px;
+
+}
+
+.network{
+
+	margin-top: 5%;
+}
+
+.reseau{
+
+	margin-top: 5%;
+}
+
+.network i:hover{
+
+	color: #D31F43;
+	border-style: solid;
+	border-width: 3px;
+	padding: 20px;
+	transition-duration:1s;
+}
+
+.up a .fa {
+	text-align: center;
+	opacity: 0.5;
+	margin-top: 1%;
+	color: white;
+}
+
+.up .fa:hover {
+	text-align: center;
+	opacity: 0.5;
+	color: #D31F43;
+	transition-duration: 1s;
+}
+
+.valid{
+
+	color: #D31F43;
+	font-family:"GothamRounded-Medium";
+}
+
+
+
+/* ----------------  fin Contact  ---------------------*/
+
+/* ----------------  Experiences professionnelle  ---------------------*/
+.experience{
+
+	height: 100%;
+	background-image: url(../img/brennan-burling-335455.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: 100% 100%;
+}
+.experience h2{
+	color: #EFEFEF;
+	border-bottom-color: #EFEFEF;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+.pro p{
+
+	text-align: justify;
+	text-align-last: center;
+	font-family:"GothamRounded-Medium";
+	
+}
+
+.jaeger, .zodiac, .gendarmerie{
+
+	background-color: white;
+	
+
+}
+
+.jaeger, .zodiac, .gendarmerie{
+
+	margin-right: 2%;
+}
+
+.date{
+
+	color: grey;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 6%;
+	
+}
+.scroll{
+
+	margin-top: 2%;
+}
+.scroll a .fa {
+	text-align: center;
+	opacity: 0.5;
+	margin-top: 10%;
+	color: white;
+}
+
+.scroll .fa:hover {
+	text-align: center;
+	opacity: 0.5;
+	color: #D31F43;
+	transition-duration: 1s;
+}
+
+.metier div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color:white;
+	opacity: 0;
+	transition: opacity .300s linear;
+	color: grey;
+	margin-top: 2%;
+}
+
+.metier:hover div {
+	opacity: 1;
+	transition: opacity .300s linear;
+}
+
+.metier div h4 {
+	color: grey;
+}
+
+ .metier1 {
+ 	width: 100%;
+	height: 170px;
+	 background-image: url(../img/johannes-weissmuller-411960.png);
+	 background-size: 100% 100%;
+	 margin-top: 5%;
+	 background-repeat: no-repeat;
+ }
+
+  .metier2 {
+  		width: 100%;
+		height: 170px;
+	  background-image: url(../img/alec-cooks-272307.png);
+	  background-size: 100% 100%;
+	  margin-top: 5%;
+	  background-repeat: no-repeat;
+  }
+
+   .metier3 {
+   		width: 100%;
+   		height: 170px;
+	   background-image: url(../img/igor-ovsyannykov-417115.png);
+	   background-size: 100% 100%;
+	   margin-top: 5%;
+	   background-repeat: no-repeat;
+   }
+
+
+   @media screen and (max-width: 420px) {
+   	.chevronexp1 {
+   		display: none;
+   	}
+   }
+
+   @media screen and (min-width: 420px) {
+   	.chevronexp2 {
+   		display: none;
+   	}
+   }
+
+/* ----------------  Fin Experiences professionnelle  ---------------------*/
+
+
+/* ----------------  Fromations  ---------------------*/
+.formation{
+
+	height: 100%;
+	background-color: rgb(223, 223, 223);
+	text-align: center;
+
+}
+.formation i{
+
+	margin-top: 2%;
+}
+
+
+.dev{
+	background-color:white;
+}
+
+.base{
+	background-color: rgb(255, 255, 255);
+
+}
+
+.bagage .fa {
+	margin-top: 15%;
+}
+
+.bagage{
+	margin-top: 7%;
+}
+.bagage i{
+
+	margin-bottom: 15%;
+}
+
+.trait{
+	margin-bottom: 15%;
+}
+
+.bagage h4{
+	
+	font-family: "GothamRounded-Medium";
+	margin-bottom: 15%;
+}
+
+.bagage p{
+
+	font-family: "GothamRounded-Medium";
+	font-size: 14px;
+	color: #8c9398;
+}
+
+
+
+/* ---------------- fin Fromations  ---------------------*/
+
+/* ---------------- Projets  ---------------------*/
+
+.promo{
+
+	text-align: center;
+	height: 100%;
+}
+
+h3{
+
+	text-align: center;
+	margin-top: 4%;
+	font-family: 'Raleway-ExtraBold', sans-serif;
+	font-size: 40px;
+}
+
+.cv{
+	margin-top: 5%;
+	height: 300px;
+	padding: 0;
+}
+
+.row .cv :hover {
+	color: white;
+	width: 100%;
+	height: 100%;
+	transition-duration: 1s;
+	border-color: white;
+}
+
+.projo {
+
+	margin-bottom: 5%;
+}
+
+.projects{
+	background-color: #E3E3E3;
+	padding: 0;
+}
+
+.secpro{
+	background-color: #C9C9C9;
+	padding-right: 0px;
+}
+
+.arrow a .fa {
+	text-align: center;
+	opacity: 0.5;
+	margin-top: 150%;
+	color: black;
+}
+
+.arrow .fa:hover {
+	text-align: center;
+	opacity: 0.5;
+	color: #D31F43;
+	transition-duration: 1s;
+}
+	
+
+
+.chaud{
+	height: 100%;
+}
+
+.chaud img{
+
+padding: 1%;
+
+}
+
+.photo {
+	position: relative;
+}
+
+.photo div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-color:black;
+	opacity: 0;
+	transition: opacity .300s linear;
+	color: #EFEFEF;
+}
+
+.photo:hover div {
+	opacity: 1;
+	transition: opacity .300s linear;
+}
+
+.photo1 {
+	
+	height: 300px;
+	background-image: url(../img/space.jpg);
+}
+
+.photo div p{
+	color: #FFB300;
+}
+
+.photo2 {
+	
+	height: 300px;
+	background-image: url(../img/projet.jpg);
+}
+
+.photo3 {
+	
+	height: 300px;
+	background-image: url(../img/header.jpg);
+}
+
+.photo4{
+	
+	height: 300px;
+	background-image: url(../img/wordpress.jpg);
+}
+
+.photo5 {
+	
+	height: 300px;
+	background-image: url(../img/price.jpg);
+}
+
+.photo6 {
+	
+	height: 300px;
+	background-image: url(../img/film.jpg);
+
+}
+
+
+.photo7 {
+	
+	height: 300px;
+	background-image: url(../img/museum.jpg);
+}
+
+.photo8 {
+	
+	height: 300px;
+	background-image: url(../img/balise.jpg);
+}
+
+.photo9 {
+	
+	height: 300px;
+	background-image: url(../img/explorer.jpg);
+}
+
+.chaud a{
+
+	text-decoration-color: rgb(238, 130, 6);
+}
+/* ---------------- fin projet  ---------------------*/
+
+
+/* ---------------- carousel  ---------------------*/
+
+@media screen and (max-width: 420px) {
+	.promo {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 420px) {
+	.fluide {
+		display: none;
+	}
+}
+
+.fluide{
+
+	margin-bottom: 5%;
+}
+
+.fluide h2{
+
+	margin-bottom: 15%;
+}
+
+
+
+
+/* ---------------- fin carousel  ---------------------*/
+
+
+

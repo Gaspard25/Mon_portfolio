@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block stylesheets %}
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/css/animate.css"> 
+    {% endblock %}
+    
+        <title>{% block title %}Antoine!{% endblock %}</title>
+    
+</head>
+
+<body>
+    
+    {% block body %}
+
+    <div id="index">{% block index %}{% endblock %}</div>
+
+    {% endblock %}
+
+
+    {% block javascripts %}
+
+<script src="asset/js/jquery-3.2.1.min.js"></script>
+<script src="asset/js/bootstrap.min.js"></script>
+<script src="asset/js/popper.js"></script>
+<script src="asset/js/midnight.jquery.min.js"></script>
+
+
+
+<script src="asset/js/wow.min.js"></script>
+
+
+<script type="text/javascript">
+
+    $('#myCollapse').on('shown.bs.collapse'), function (e) { // Action to execute once the collapsible area is expanded }) 
+    };
+
+    wow = new WOW(
+        {
+            animateClass: 'animated',
+            offset: 0,
+            callback: function (box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        }
+    );
+
+    wow.init();
+
+    document.getElementById('moar').onclick = function () {
+        var section = document.createElement('section');
+        section.className = 'section--purple wow fadeInDown';
+        this.parentNode.insertBefore(section, this);
+    };
+
+
+    $(document.body).on('click', 'a[href*="#main"]', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $(this.hash).offset().top
+        }, 900);
+    });
+
+
+    $(window).on('scroll',
+        function () {
+            var scrolled = $(window).scrollTop();
+            var height = $(window).height();
+            if (scrolled < height) {
+                $('.full-image').css({ 'top': -scrolled * .5 });
+            }
+        });
+
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#main"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(".description").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.description').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+
+</script>
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#formation"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(".formation").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.fleche').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+
+</script>
+
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#experience"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(".experience").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.fleche').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+
+</script>
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#promo"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(".promo").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.fleche').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+
+</script>
+
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#fluide"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(".fluide").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.fleche').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+
+</script>
+
+
+
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#contact"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(".contact").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.fleche').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+
+</script>
+
+
+<script type="text/javascript">
+
+    $(document.body).on('click', 'a[href*="#home"]',
+        function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: $("header").offset().top
+            }, 900);
+        });
+
+
+    $(window).on('scroll', function () {
+        var scrolled = $(window).scrollTop();
+        var height = $(window).height();
+        if (scrolled < height) {
+            $('.fleche').css({ 'top': -scrolled * .5 });
+        }
+    });
+
+</script>
+
+    {% endblock %}  
+    
+</body>
+</html>
